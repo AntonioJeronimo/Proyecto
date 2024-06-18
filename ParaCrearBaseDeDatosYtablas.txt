@@ -1,0 +1,24 @@
+-- Crear la base de datos si no existe
+CREATE DATABASE IF NOT EXISTS id22199857_proyecto_3funnys;
+
+-- Conectar a la base de datos
+USE id22199857_proyecto_3funnys;
+
+-- Crear la tabla galeria
+CREATE TABLE galeria (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    descripcion TEXT NOT NULL,
+    imagen VARCHAR(255) NOT NULL,
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Crear la tabla libros
+CREATE TABLE libros (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    descripcion TEXT NOT NULL,
+    imagen VARCHAR(255),
+    archivo VARCHAR(255),
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
